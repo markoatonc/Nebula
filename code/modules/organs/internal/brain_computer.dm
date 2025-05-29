@@ -5,6 +5,9 @@
 	icon = 'icons/obj/items/brain_interface_robotic.dmi'
 	origin_tech = @'{"engineering":4,"materials":4,"wormholes":2,"programming":4}'
 	material = /decl/material/solid/metal/steel
+	abstract_type = /decl/bodytype/prosthetic
+	var/is_robotic = TRUE
+	organ_properties = ORGAN_PROP_PROSTHETIC
 	matter = list(
 		/decl/material/solid/glass = MATTER_AMOUNT_REINFORCEMENT,
 		/decl/material/solid/metal/silver = MATTER_AMOUNT_TRACE,

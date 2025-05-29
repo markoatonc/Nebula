@@ -107,7 +107,7 @@
 /decl/ghosttrap/machine_intelligence/transfer_personality(mob/candidate, mob/target)
 	if(assess_candidate(candidate))
 
-		var/obj/item/organ/internal/brain/robotic/brain = target.loc?.loc
+		var/obj/item/organ/internal/brain/robotic/brain = target.get_recursive_loc_of_type(/obj/item/organ/internal/brain/robotic)
 		if(!istype(brain))
 			return FALSE
 
